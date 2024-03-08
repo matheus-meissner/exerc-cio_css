@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+/* box-sizing: border-box (diz para o navegador respeitar as medidas estabelecidas);
+margin: 0 e padding: 0 (reseta as medidas que vem como padrão do navegador);
+*/
+
+body > header {
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+}
+
+header .container {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+header .container ul li:hover{
+    text-decoration: underline;
+}
+
+header li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    /* height: 180px; */
+    width: 100%;  
+}
+
+.articles article {
+    width: 32%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+    .articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/*.articles article a {
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+*/
+
+/*.articles article .btn:hover {
+    text-decoration:underline;
+    
+} */
+
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+/* ### ESPORTES ### */
+
+#esportes {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#esportes .articles article .btn {
+    background-color: rgba(0, 255, 0, 0.8);
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+#esportes .articles article .btn:hover{
+    text-decoration: underline;
+    color: #0a7700;
+}
+
+#esportes .articles article img {
+    border: rgba(0, 255, 0, 0.8);
+    border-radius: 20px;
+    border-style:solid;
+}
+
+#esportes .articles article img:hover {
+    border: #0a7700;
+    border-radius: 20px;
+    border-style:solid;
+}
+
+/* ### ECONOMIA ### */
+
+#economia {
+    background-color: #f8f59f;
+}
+
+#economia .articles article .btn {
+    background-color: #ff9f1a;
+    color: #fff;
+    padding: 8px;
+    display:inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+#economia .articles article .btn:hover{
+    text-decoration: underline;
+    color: #ffe600;
+}
+
+#economia .articles article img {
+    border: #ff9f1a;
+    border-radius: 20px;
+    border-style:solid;
+}
+
+#economia .articles article img:hover {
+    border: #ffe600;
+    border-radius: 20px;
+    border-style:solid;
+}
+
+
+/* ### TECNOLOGIA ### */
+
+#tecnologia {
+    background-color: rgb(148, 248, 248);
+}
+
+#tecnologia .articles article .btn {
+    background-color: black;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+#tecnologia .articles article .btn:hover{
+    text-decoration: underline;
+    color: rgb(4, 0, 255);
+}
+
+#tecnologia .articles article img {
+    border: black;
+    border-radius: 20px;
+    border-style:solid;
+}
+
+#tecnologia .articles article img:hover {
+    border: rgb(4, 0, 255);
+    border-radius: 20px;
+    border-style:solid;
+}
+
+/* ### ARTE ### */
+
+#arte {
+    background-color: rgb(244, 215, 255);
+}
+
+#arte .articles article .btn {
+    background-color: rgb(170, 66, 83);
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+#arte .articles article .btn:hover{
+    text-decoration: underline;
+    color: rgb(253, 0, 177);
+}
+
+#arte .articles article img {
+    border: rgb(170, 66, 83);
+    border-radius: 20px;
+    border-style:solid;
+}
+
+#arte .articles article img:hover {
+    border: rgb(253, 0, 177);
+    border-radius: 20px;
+    border-style:solid;
+}
+
+/* ### ARTE ### */
+
+/*
+### ESTRUTURA CSS ###
+
+seletor: {
+    propriedade: valor;
+}
+
+seletor = Objeto a ser estilizado;
+propriedade = Tipo de estilização;
+valor = Define a propriedade;
+*/
+
+
+
+/*
+h1 {
+    color: green;
+} define a cor de apenas uma tag 
+*/
+
+/*
+h2 {
+    color: green;
+} define a cor de apenas uma tag 
+*/
+
+/*
+#economia h2 {
+    color: gold
+} define propriedades para um id específico dentro de uma tag (usado menos que "classes" por conta de ser exclusivo 
+*/
+
+/*
+.creation_date {
+    color: #ccc
+} define propriedades para uma classe dentro de uma tag (usado quando há classes parecidas dentro de tags diferentes, é melhor para espeficicar */
+
+
+
